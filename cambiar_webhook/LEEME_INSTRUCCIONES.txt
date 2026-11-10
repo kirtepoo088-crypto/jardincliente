@@ -1,0 +1,32 @@
+====================================================================
+  CÓMO CAMBIAR EL WEBHOOK DE DISCORD EN PANEL PEDRO
+====================================================================
+
+Para cambiar el webhook de Discord en cualquier PC con Windows:
+
+FORMA 1 (Doble clic - Recomendado - Sin instalar nada):
+----------------------------------------------------------------------
+1. Haz doble clic en el archivo:
+   👉 cambiar_webhook.bat
+
+2. Se abrirá una ventana que te dirá:
+   "Pega tu Webhook de Discord y presiona Enter"
+
+3. Pega tu enlace de Discord (clic derecho o Ctrl+V) y presiona Enter.
+
+4. El script:
+   - Cifra el webhook automáticamente con el algoritmo XOR seguro.
+   - Actualiza ../app.js al instante.
+   - Te da la opción de enviar un mensaje de prueba a tu Discord para confirmar que funciona.
+¡Y listo!
+
+----------------------------------------------------------------------
+FORMA 2 (Si prefieres usar la consola o tienes Node.js instalado):
+----------------------------------------------------------------------
+Abre la consola en esta carpeta y ejecuta:
+   node cambiar_webhook.js
+
+O pasando el enlace directamente:
+   node cambiar_webhook.js "https://discord.com/api/webhooks/TU_ID/TU_TOKEN"
+====================================================================
+

